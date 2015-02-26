@@ -93,7 +93,7 @@ pip install --user http://stsdas.stsci.edu/astrolib/coords-0.37.tar.gz
 Nous allons vérifier que iPython et pandas sont bien installés par les commandes suivantes :
 
 ```bash
-ipython --pylab
+$ ipython --pylab
 
 In [1]: import pandas
 
@@ -108,5 +108,5 @@ Lors de cette semaine, nous allons travailler avec iPython notebook. <br>
 Une fois que vous avez téléchargé le programme de la semaine essayer d'y acceder en tapant la commande suivante :
 
 ```bash
-C:\Users\YourName>ipython notebook
+$ ipython notebook
 ```
