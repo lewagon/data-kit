@@ -1,6 +1,8 @@
 # Setup instructions
 
-Les instructions suivantes vont vous permettre d'avoir tous les outils nécessaires pour suivre la formation [Le Wagon](http://www.lewagon.org) DATA KIT :
+Les instructions suivantes vont vous permettre d'avoir tous les outils nécessaires <br> pour suivre la formation [Le Wagon](http://www.lewagon.org) DATA KIT :
+
+![Lewagon-logo](images/logo-lewagon.png)
 
 
 ## Github
