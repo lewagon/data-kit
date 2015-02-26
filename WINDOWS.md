@@ -15,6 +15,8 @@ Inscrivez-vous sur [Github](https://github.com/join), c'est sur cette plateforme
 
 ## Canopy
 
+![canopy-logo](images/canopy-logo.jpg)
+
 [Téléchargez Canopy](https://www.enthought.com/products/canopy/)
 
 Canopy vous permet d'installer Python et plusieurs librairies que nous allons utiliser (Pandas, ...).
