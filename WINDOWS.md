@@ -15,7 +15,7 @@ Inscrivez-vous sur [Github](https://github.com/join), c'est sur cette plateforme
 
 ## Canopy
 
-![canopy-logo](images/canopy-logo.jpg)
+![canopy-logo](images/canopy-logo.png)
 
 [Téléchargez Canopy](https://www.enthought.com/products/canopy/)
 
