@@ -7,8 +7,8 @@ Les instructions suivantes vont vous permettre d'avoir tous les outils nécessai
 
 ## Github
 
-![github-logo](images/github-logo.jpg)
-<img src="/images/github-logo.jpg)" alt="github-logo" style="width:30px;margin:auto;">
+![github-logo](images/github-logo.jpg =270x)
+
 
 Inscrivez-vous sur [Github](https://github.com/join), c'est sur cette plateforme que vous trouverez les cours et exercices de la formation.
 
