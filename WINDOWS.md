@@ -7,7 +7,7 @@ Les instructions suivantes vont vous permettre d'avoir tous les outils nécessai
 
 ## Github
 
-![github-logo](images/github-logo.jpg ){ width: 200px; }
+![github-logo](images/github-logo.jpg )
 
 
 Inscrivez-vous sur [Github](https://github.com/join), c'est sur cette plateforme que vous trouverez les cours et exercices de la formation.
@@ -49,6 +49,8 @@ In [2]: plot(arange(10))
 ```
 
 Si tout fonctionne bien, vous devriez avoir un beau graphique apparaitre.
+
+![resultat_final](images/resultat_final.jpg )
 
 Lors de cette semaine, nous allons travailler avec iPython notebook. <br>
 Une fois que vous avez téléchargé le programme de la semaine essayer d'y acceder en tapant la commande suivante :
