@@ -7,7 +7,7 @@ Les instructions suivantes vont vous permettre d'avoir tous les outils nécessai
 
 ## Github
 
-![github-logo](images/logo-github.png)
+![github-logo](images/github-logo.png)
 
 Inscrivez-vous sur [Github](https://github.com/join), c'est sur cette plateforme que vous trouverez les cours et exercices de la formation.
 
