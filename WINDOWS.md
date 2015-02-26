@@ -48,9 +48,9 @@ In [1]: import pandas
 In [2]: plot(arange(10))
 ```
 
-Si tout fonctionne bien, vous devriez avoir un beau graphique apparaitre.
+Si tout fonctionne bien, vous devriez voir un beau graphique apparaitre.
 
-![resultat_final](images/resultat_final.jpg )
+![resultat_final](images/resultat_final.png )
 
 Lors de cette semaine, nous allons travailler avec iPython notebook. <br>
 Une fois que vous avez téléchargé le programme de la semaine essayer d'y acceder en tapant la commande suivante :
