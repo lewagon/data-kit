@@ -49,43 +49,41 @@ Vous devez ensuite entrer votre password servant à votre ouverture de session l
 La licence x-code devrait apparaitre, appuyez sur la touche `q`.
 Tapez `agree`puis `Entrée`.
 
-## Canopy
+## Homebrew
 
-![canopy-logo](images/canopy-logo.png)
+Sur Mac, vous devez installer Homebrew qui est un Package Manager. Cela vous nous permettre d'installer Python et ses différents buildpacks. <br>
+Pour ce faire, copiez collez cette ligne dans votre terminal :
 
-[Téléchargez Canopy](https://www.enthought.com/products/canopy/)
-Canopy vous permet d'installer Python et plusieurs librairies que nous allons utiliser (Pandas, ...).
-<br>
-Pour vérifier si Canopy a bien été installé, vous pouvez ouvrir votre ligne de commande et taper :
 ```bash
-$ which ipython
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Vous devriez avoir en résultat :
+Confirmez en tapant `Entrée` puis le mot de passe de votre ordinateur.
 
-/usr/local/bin/ipython
-
-## Intallation des packages additionnels
-
-Copiez collez les lignes ci-dessous l'une après l'autre et vérifiez que chacune d'elle a fonctionné.
+Installez python via :
 
 ```bash
-$ sudo easy_install --upgrade pip
-$ sudo pip install --upgrade distribute
+$ brew install python
+```
+Installez setuptools et pip via :
+
+```bash
+pip install --upgrade setuptools
+pip install --upgrade pip
 ```
 
-Fermez puis ré-ouvrez votre terminal afin que ```pip``` soit reconnu. puis tapez :
+
+Fermez puis ré-ouvrez votre terminal afin que ```pip``` soit reconnu.
+
+Installez iPython :
 
 ```bash
-pip install --user asciitable
-pip install --user pyfits
-pip install --user pywcs
-pip install --user atpy
-pip install --user aplpy
-pip install --user pyregion
-pip install --user pyparsing
-pip install --user http://stsdas.stsci.edu/astrolib/vo-0.6.tar.gz
-pip install --user http://stsdas.stsci.edu/astrolib/coords-0.37.tar.gz
+pip install ipython[all]
+```
+Installez pandas :
+
+```bash
+pip install pandas
 ```
 
 ## Testons notre installation
