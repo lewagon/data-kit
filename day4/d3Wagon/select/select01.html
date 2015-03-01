@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+
+	<script type="text/javascript" src="../src/d3.js"></script>
+
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+<table border="0">
+<tr>
+	<td id="titreCircle">Circles</td>
+	<td id="titreSquare">Squares</td>
+	<td id="titreTab">Svgs</td>
+</tr>
+<tr>
+	<td id="containerCircle"></td>
+	<td id="containerSquare"></td>
+	<td id="containerTab"></td>
+</tr>
+</table>
+
+
+<script type="text/javascript">
+
+var w = 800,
+	h = 400;
+
+var dataCircle = d3.range(50).map(function(d) {return {color:Math.random()};}),
+	dataSquares = d3.range(50).map(function(d) {return {color:Math.random()};}),
+	dataTabs = d3.range(50).map(function(d) {return {color:Math.random()};}),
+	colorScale = d3.scale.ordinal().domain([0,1]).range(["blue","green","red"]);
+
+var circles =  d3.select("#containerCircle").append("svg:svg").attr("width",w/2).attr("height",h);
+
+circles.selectAll("circle")
+	.data(dataCircle)
+.enter().append("svg:circle")
+	.attr("cx",function(d,i) {return (i%4)*30 + 50;})
+	.attr("cy",function(d,i) {return (Math.floor(i/4)) * 50 + 20;})
+	.attr("r",10)
+	.attr("fill",function(d) {return colorScale(d.color);})
+	.attr("class",function(d) {return colorScale(d.color);})
+
+var squares =  d3.select("#containerSquare").append("svg:svg").attr("width",w/2).attr("height",h);
+
+squares.selectAll("rect")
+	.data(dataSquares)
+.enter().append("svg:rect")
+	.attr("x",function(d,i) {return (i%4)*30 + 50;})
+	.attr("y",function(d,i) {return (Math.floor(i/4)) * 50 + 20;})
+	.attr("width",20)
+	.attr("height",20)
+	.attr("fill",function(d) {return colorScale(d.color);})
+	.attr("class",function(d) {return colorScale(d.color);})
+
+var tabs = d3.select("#containerTab").append("svg:svg").attr("width",w/2).attr("height",h);
+
+tabs.selectAll("g")
+	.data(dataTabs)
+.enter().append("svg:g")
+	.attr("transform", function(d,i) { return "translate(" + ((i%4)*30 + 50) + "," + ((Math.floor(i/4)) * 50 + 20) + ")"; })
+	.attr("width",20)
+	.attr("height",20)
+	.attr("stroke",function(d) {return colorScale(d.color);})
+
+</script>
+
+</body>

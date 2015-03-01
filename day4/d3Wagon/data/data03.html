@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+
+	<script type="text/javascript" src="../src/d3.js"></script>
+
+<style>
+
+
+</style>
+
+</head>
+
+<body>
+
+	<script type="text/javascript">
+
+d3.csv("sets/lyceeFR.csv",function(csv) {
+
+var maxEffectif = d3.max(csv,function(d, i) {return parseFloat(d.effectif);}),
+    minEffectif = d3.min(csv,function(d, i) {return parseFloat(d.effectif);});
+
+console.log("max effectif : " + maxEffectif);
+
+console.log("min effectif : " + minEffectif);
+
+});
+
+	</script>
+
+</body>
