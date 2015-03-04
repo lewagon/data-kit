@@ -45,7 +45,7 @@ On créé alors un nouvel objet : **la série groupée**
 ```
 df['column1'].groupby(df['column2']).sum()
 ```
-Les résultats ressortent donc ** agrégés**
+Les résultats ressortent donc ** agrégés **
 * On peut réaliser un goupby sur plusieurs index
 ```
 df['column1'].groupby(df['column2'],df['column3'])
