@@ -4,7 +4,7 @@ Matplotlib est une librairie Python permettant de réaliser des visualisations d
 
 * Intégrer des visualisations au sein d'un document iPython.
 
-Nous pouvons spécifier différents paramètres d'affichages :
+Nous pouvons spécifier différents paramètres d'affichage :
 
 Le paramètre **inline** permet d'intégrer des graphes au sein d'un document iPython (et non sur une fenêtre extérieure)
 
