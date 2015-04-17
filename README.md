@@ -1,4 +1,8 @@
-Setup guides made for [Le Wagon](http://www.lewagon.org/en). Please choose:
+## Bienvenue sur le kit Data du Wagon ! 
+
+### Installation
+
+Choisissez votre système d'exploitation pour accéder aux étapes :
 
 - [OS X](OSX.md)
 - [Windows](WINDOWS.md)
