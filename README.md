@@ -4,5 +4,5 @@
 
 Choisissez votre système d'exploitation pour accéder aux étapes :
 
-- [OS X](OSX.md)
-- [Windows](WINDOWS.md)
+- [OS X](setup/OSX.md)
+- [Windows](setup/WINDOWS.md)
