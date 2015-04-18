@@ -2,12 +2,12 @@
 
 Les instructions suivantes vont vous permettre d'avoir tous les outils nécessaires <br> pour suivre la formation [Le Wagon](http://www.lewagon.org) DATA KIT :
 
-![Lewagon-logo](.../images/logo-lewagon.png)
+![Lewagon-logo](../images/logo-lewagon.png)
 
 
 ## Github
 
-![github-logo](.../images/github-logo.jpg )
+![github-logo](../images/github-logo.jpg )
 
 
 Inscrivez-vous sur [Github](https://github.com/join), c'est sur cette plateforme que vous trouverez les cours et exercices de la formation.
@@ -16,7 +16,7 @@ Inscrivez-vous sur [Github](https://github.com/join), c'est sur cette plateforme
 
 ## Canopy
 
-![canopy-logo](.../images/canopy-logo.png)
+![canopy-logo](../images/canopy-logo.png)
 
 [Téléchargez Canopy](https://www.enthought.com/products/canopy/)
 
@@ -50,7 +50,7 @@ In [2]: plot(arange(10))
 
 Si tout fonctionne bien, vous devriez voir un beau graphique apparaitre.
 
-![resultat_final](.../images/resultat_final.png )
+![resultat_final](../images/resultat_final.png )
 
 Lors de cette semaine, nous allons travailler avec iPython notebook. <br>
 Une fois que vous avez téléchargé le programme de la semaine essayer d'y acceder en tapant la commande suivante :
