@@ -1,7 +1,8 @@
 # Erreurs fréquentes
 
-Les instructions suivantes vont vous permettre d'avoir tous les outils nécessaires <br> pour suivre la formation [Le Wagon](http://www.lewagon.org) DATA KIT :
+Il arrive que des erreurs surviennent lors de l'installation. 
 
+Nous listons dans ce document les erreurs les plus fréquentes. N'hésitez pas à contribuer ! 
 
 ## Mac OSX
 
