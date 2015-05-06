@@ -1,6 +1,6 @@
 ### Correction Introduction à Numpy
 
-1 - On créé un nd.array grâce à la méthode **np.array** :
+1 - On crée un nd.array grâce à la méthode **np.array** :
 
 ```python 
 list = [[19.23, 39.14, 67.78, 98.49], [56.78, 88.78, 99.01, 99.99], [12.00, 76.87, 91.09, 10.01], [99.01, 70.32, 64.89, 36.68]]
