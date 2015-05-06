@@ -1,5 +1,7 @@
 ### Correction Introduction à Numpy
 
+#### Challenge 1
+
 1 - On crée un nd.array grâce à la méthode **np.array** :
 
 ```python 
@@ -23,3 +25,30 @@ array[1:3]
 array[:,3]
 
 ```
+
+#### Challenge 2
+
+1 - On sélectionne les valeurs négatives de **arr** grâce à : 
+
+```python 
+
+array[arr<0]
+
+```
+
+2 - En utilisant l'opérateur **!=** : 
+
+```python 
+
+array[arr!=2]
+
+```
+
+3 - En utilisant l'opérateur **|** : 
+
+```python 
+
+array[(arr==2)(arr==3)]
+
+```
+
