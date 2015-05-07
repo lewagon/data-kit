@@ -27,6 +27,10 @@ reserve['Subvention allouée'].groupby(reserve['Parlementaire transmetteur']).su
 
 4 / On groupe par la clé `Département` puis nous réduisons avec la méthode `count` :
 
+```python
+
 reserve['Subvention allouée'].groupby(reserve['Département']).count().order(ascending=False)
+
+```
 
 #### Challenge 2
