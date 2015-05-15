@@ -62,66 +62,43 @@ elysee_df.groupby('hour')['text'].count().plot(kind="area")
 
 #### Challenge 3
 
-1 / On groupe par la clé **Nature** puis nous réduisons avec la méthode **mean**
+1/ Vu dans le carnet iPython
+
+2 / Nous extrayons de la même manière les hashtags grâce à une expression régulière appliquée à l'ensemble du texte du DataFrame :
 
 ```python
-reserve['Coût du projet'].groupby(reserve['Nature']).mean()
+pattern_mentions = "#[A-Z0-9._%+-]+"
+
+elysee_df['hashtags'] = elysee_df['text'].str.findall(pattern_mentions, re.IGNORECASE).str[0]
 ```
 
-2 / On réalise un groupe sur les clés **Département** et **Nature** puis nous réduisons avec la méthode **size**. (Nous aurions également pu utiliser la méthode count à partir d'une série). 
-Nous utilisons ensuite la méthode **unstack** pour transformer notre série **multiindex** en un DataFrame. 
-Nous récupérons enfin la ligne correspondant au département **YVELINES** en utilisant la méthode **ix**
+Nous groupons puis réduisons sur la colonne **hashtags** :
 
 ```python
-reserve.groupby(['Département','Nature']).size().unstack().ix['YVELINES']
+elysee_df.groupby('hashtags').size().order(ascending=False).head()
 ```
 
-3/ Nous pouvons utiliser une simple sélection booléenne pour récupérer la ligne dont le bénéficiaire est égal à **PARIS**.
+Vous voyez cependant la limite de notre méthode : nous ne prenons dans ce cas que le premier hashtag affiché dans le tweet. 
+
+3 / Nous pouvons utiliser une sélection booléenne pour restreindre **elysee_df** à `gouvernementFR` : 
+
+```python
+elysee_df[elysee_df['mentions'] == "@gouvernementFR"].groupby('hashtags').size().order(ascending=False)
+```
+
+--> SIM-PLI-FI-CA-TION
+
+3/ Nous pouvons utiliser une sélection booléenne pour récupérer la ligne dont le bénéficiaire est égal à **PARIS**.
 
 ```python
 reserve[reserve['Bénéficiaire'] == 'PARIS']
 ```
 
-#### Challenge 3
-
-1/ On définit une fonction **part** qui renvoie la moyenne du ratio subvention / coût :
+4/ Nous pouvons utiliser une sélection booléenne pour récupérer la ligne dont le bénéficiaire est égal à **PARIS**.
 
 ```python
-def part(df):
-    return np.mean(df['Subvention allouée'] / df['Coût du projet'])
+elysee_df[elysee_df['hashtags'] == "#DDay70"].groupby('mentions').size().order(ascending=False).head()
 ```
-
-On applique un groupe par **parti**, en réduisant avec la fonction **part** :
-
-```python
-reserve.groupby(['parti']).apply(part).order(ascending=False)
-```
-
-2/ On ajoute une nouvelle colonne **match** vérifiant si la subvention a été réalisée dans le Département du parlementaire
-
-```python
-reserve['match'] = reserve['Département Parlementaire'] == reserve['Département']
-```
-
-On réalise un groupe sur les clés **match** et **Parlementaire transmetteur**. Nous réduisons avec la méthode **size**. Puis nous appliquons la méthode **unstack** pour récupérer un DataFrame :
-
-```python
-sub_parlementaire = reserve.groupby(['Parlementaire transmetteur','match']).size().unstack().fillna(0)
-```
-
-Nous ajoutons une colonne **total**, somme de **True** et de **False** 
-
-```python
-sub_parlementaire['total'] = sub_parlementaire[True] + sub_parlementaire[False]
-```
-
-Nous filtrons enfin par une sélection booléenne les parlementaires ayant plus de 50 subventions
-
-```python
-sub_parlementaire[sub_parlementaire['total'] > 50].sort(True,ascending=False)
-```
-
-Coucou [Philippe MARINI](http://www.francetvinfo.fr/politique/reserve-parlementaire/comment-compiegne-a-ete-financee-par-la-reserve-parlementaire-de-son-senateur-maire_720153.html) ;) 
 
 
 
