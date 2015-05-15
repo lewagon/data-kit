@@ -88,15 +88,7 @@ Vous voyez cependant la limite de notre méthode : nous ne prenons dans ce cas q
 elysee_df[elysee_df['mentions'] == "@gouvernementFR"].groupby('hashtags').size().order(ascending=False)
 ```
 
---> SIM-PLI-FI-CA-TION
-
-3/ Nous pouvons utiliser une sélection booléenne pour récupérer la ligne dont le bénéficiaire est égal à **PARIS**.
-
-```python
-reserve[reserve['Bénéficiaire'] == 'PARIS']
-```
-
-4/ Nous pouvons utiliser une sélection booléenne pour récupérer la ligne dont le bénéficiaire est égal à **PARIS**.
+4/ Nous pouvons utiliser une sélection booléenne pour récupérer la ligne dont la colonne **hashtag** est égale à **#DDay70**.
 
 ```python
 elysee_df[elysee_df['hashtags'] == "#DDay70"].groupby('mentions').size().order(ascending=False).head()
