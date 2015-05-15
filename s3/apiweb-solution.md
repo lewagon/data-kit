@@ -59,6 +59,8 @@ elysee_df.groupby('hour')['text'].count().plot(kind="area")
 
 ```
 
+<img src="https://raw.githubusercontent.com/lewagon/mooc-images/master/data-science/course_7/apiweb_challenge2_3.png">
+
 
 #### Challenge 3
 
