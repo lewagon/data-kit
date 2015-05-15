@@ -42,10 +42,25 @@ print elysee_df.ix['2015-01-07'].sort('retweet_count',ascending=False)['text'].h
 
 4 - Plusieurs méthodes sont possibles. 
 
-Nous pouvons par exemple ajouter une nouvelle colonne, à partir de **l'index** en récupérant l'heure du tweet. Puis grouper sur cette nouvelle colonne : 
+Nous pouvons par exemple ajouter une nouvelle colonne, à partir de **l'index** en récupérant l'heure du tweet : 
+
+``` python
+
+elysee_df['hour'] = elysee_df.index.hour
+
+```
+
+Puis grouper sur cette nouvelle colonne en réduisant avec la méthode **count** :
 
 
-#### Challenge 2
+``` python
+
+elysee_df.groupby('hour')['text'].count().plot(kind="area")
+
+```
+
+
+#### Challenge 3
 
 1 / On groupe par la clé **Nature** puis nous réduisons avec la méthode **mean**
 
