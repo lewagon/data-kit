@@ -24,7 +24,7 @@ data.groupby('title').size().order(ascending=False).head(5)
 
 Nous obtenons le résultat suivant : 
 
-<img src="https://raw.githubusercontent.com/lewagon/mooc-images/master/data-science/course_8/challenge_1.png">
+<img src="https://raw.githubusercontent.com/lewagon/mooc-images/master/data-science/course_8/challenge1.png">
 
 #### 3 - Quels sont les 5 films qui ont la meilleure note moyenne ayant été noté plus de 100 fois ? 
 
@@ -42,7 +42,7 @@ top_100[top_100['count'] > 100].sort('mean',ascending=False).head(5)
 
 Nous obtenons le résultat suivant (Ravi de voir Usual Uspect dans le top 5;) ) :
 
-<img src="https://raw.githubusercontent.com/lewagon/mooc-images/master/data-science/course_8/challenge_2.png">
+<img src="https://raw.githubusercontent.com/lewagon/mooc-images/master/data-science/course_8/challenge2.png">
 
 #### 4 - Quelle est la tranche d'âge notant le moins bien ? 
 
@@ -54,7 +54,7 @@ data['rating'].groupby(data['age']).mean().order(ascending=False).plot(kind='bar
 
 Nous obtenons le résultat suivant. Les jeunes semblent vraiment plus difficiles..
 
-<img src="https://raw.githubusercontent.com/lewagon/mooc-images/master/data-science/course_8/challenge_3.png">
+<img src="https://raw.githubusercontent.com/lewagon/mooc-images/master/data-science/course_8/challenge3.png">
 
 #### 5 - Les hommes notent ils moins bien que les femmes ? 
 
@@ -93,7 +93,7 @@ Les films préféres par les hommes :
 hf[hf['total'] > 500].sort('diff').head(5)
 ```
 
-<img src="https://raw.githubusercontent.com/lewagon/mooc-images/master/data-science/course_8/challenge_4.png">
+<img src="https://raw.githubusercontent.com/lewagon/mooc-images/master/data-science/course_8/challenge4.png">
 
 Ceux préféres par les femmes :
 
@@ -101,7 +101,7 @@ Ceux préféres par les femmes :
 hf[hf['total'] > 500].sort('diff').tail(5)
 ```
 
-<img src="https://raw.githubusercontent.com/lewagon/mooc-images/master/data-science/course_8/challenge_5.png">
+<img src="https://raw.githubusercontent.com/lewagon/mooc-images/master/data-science/course_8/challenge5.png">
 
 
 
