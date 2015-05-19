@@ -1,4 +1,4 @@
-### Correction Data Wrangling avec Pandas
+### Correction Matplotlib
 
 #### 1 - Créez un DataFrame unique en fusionnant les users, ratings et movies
 
