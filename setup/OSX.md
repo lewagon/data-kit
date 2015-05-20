@@ -68,8 +68,8 @@ $ brew install python
 Installez setuptools et pip via :
 
 ```bash
-pip install --upgrade setuptools
-pip install --upgrade pip
+$ pip install --upgrade setuptools
+$ pip install --upgrade pip
 ```
 
 
@@ -78,12 +78,12 @@ Fermez puis ré-ouvrez votre terminal afin que ```pip``` soit reconnu.
 Installez iPython :
 
 ```bash
-pip install ipython[all]
+$ pip install ipython[all]
 ```
 Installez pandas :
 
 ```bash
-pip install pandas
+$ pip install pandas
 ```
 
 ## Testons notre installation
