@@ -76,7 +76,7 @@ $ pip install "ipython[all]"
 Installez pandas :
 
 ```bash
-$ pip install pandas
+$ pip install pandas matplotlib
 ```
 
 ## Testons notre installation
