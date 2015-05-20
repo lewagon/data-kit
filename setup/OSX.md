@@ -13,7 +13,6 @@ Les instructions suivantes vont vous permettre d'avoir tous les outils nécessai
 Inscrivez-vous sur [Github](https://github.com/join), c'est sur cette plateforme que vous trouverez les cours et exercices de la formation.
 
 
-
 ## La ligne de commande
 
 Ouvrez votre terminal
@@ -32,33 +31,26 @@ Si vous avez ce message, allez directement à l'installation de Canopy.
 ```
 
 Sinon, une fenêtre va s'ouvrir demandant votre accord pour l'installation. Acceptez! <br>
-Si ça ne marche pas, rééssayez, le erveur d'Apple peut être surchargé.
+Si ça ne marche pas, rééssayez, le serveur d'Apple peut être surchargé.
 
 ![](../images/xcode-select-install.png)
 
 Ensuite dans votre terminal, acceptez la licence x-code en tapant :
 
-
-```bash
-$ sudo xcodebuild -license
-```
-
-Vous devez ensuite entrer votre password servant à votre ouverture de session lors de l'allumage de votre ordinateur.
-<br>Ne soyez pas étonné que rien ne s'affiche et tapez `Entrée`.
-
-La licence x-code devrait apparaitre, appuyez sur la touche `q`.
-Tapez `agree`puis `Entrée`.
-
 ## Homebrew
 
 Sur Mac, vous devez installer Homebrew qui est un Package Manager. Cela vous nous permettre d'installer Python et ses différents buildpacks. <br>
+
 Pour ce faire, copiez collez cette ligne dans votre terminal :
 
 ```bash
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Confirmez en tapant `Entrée` puis le mot de passe de votre ordinateur.
+Confirmez en tapant `Entrée`.
+
+Lorsqu'un mot de passe vous sera demandé, tapez **le mot de passe de votre ordinateur**, puis `Entrée`.
+**Vous ne verrez pas les caractères s'afficher, et c'est normal**.
 
 Installez python via :
 
