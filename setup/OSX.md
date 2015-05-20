@@ -70,8 +70,9 @@ Fermez puis ré-ouvrez votre terminal afin que ```pip``` soit reconnu.
 Installez iPython :
 
 ```bash
-$ pip install ipython[all]
+$ pip install "ipython[all]"
 ```
+
 Installez pandas :
 
 ```bash
