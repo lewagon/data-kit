@@ -1,18 +1,8 @@
 # Setup instructions
 
-Les instructions suivantes vont vous permettre d'avoir tous les outils nécessaires <br> pour suivre la formation [Le Wagon](http://www.lewagon.org) DATA KIT :
+Les instructions suivantes vont vous permettre d'avoir tous les outils nécessaires pour suivre la formation [Le Wagon](http://www.lewagon.org) :
 
 ![Lewagon-logo](../images/logo-lewagon.png)
-
-
-## Github
-
-![github-logo](../images/github-logo.jpg )
-
-
-Inscrivez-vous sur [Github](https://github.com/join), c'est sur cette plateforme que vous trouverez les cours et exercices de la formation.
-
-
 
 ## Canopy
 
@@ -21,8 +11,8 @@ Inscrivez-vous sur [Github](https://github.com/join), c'est sur cette plateforme
 [Téléchargez Canopy](https://www.enthought.com/products/canopy/)
 
 Canopy vous permet d'installer Python et plusieurs librairies que nous allons utiliser (Pandas, ...).
-<br>
-Pour vérifier si Canopy a bien été installé, vous pouvez ouvrir votre ligne de commande (Cliquez sur ***Démarrer*** puis recherchez ***cmd***) :
+
+Pour vérifier si Canopy a bien été installé, vous pouvez ouvrir votre ligne de commande (Cliquez sur **Démarrer** -> **Éxecuter** puis tapez ***cmd***) :
 
 ```bash
 C:\Users\YourName>python
@@ -30,7 +20,10 @@ C:\Users\YourName>python
 Python 2.7.3 |EPD_free 7.3-1 (32-bit)| (default, Apr 12 2012, 14:30:37) on win32 Type "credits", "demo" or "enthought" for more information.
 >>>
 ```
-Nous pouvons maintenant vérifier que Pandas a aussi bien été installé par les commandes suivantes.
+
+## Vérifions notre installation
+
+Nous pouvons maintenant vérifier que **pandas** a aussi bien été installé par les commandes suivantes.
 
 ```bash
 C:\Users\YourName>ipython --pylab
@@ -50,11 +43,17 @@ In [2]: plot(arange(10))
 
 Si tout fonctionne bien, vous devriez voir un beau graphique apparaitre.
 
-![resultat_final](../images/resultat_final.png )
+![resultat_final](../images/resultat_final.png)
 
-Lors de cette semaine, nous allons travailler avec iPython notebook. <br>
-Une fois que vous avez téléchargé le programme de la semaine essayer d'y acceder en tapant la commande suivante :
+Lors de cette semaine, nous allons travailler avec iPython notebook.
+
+Une fois que vous avez cloné ou téléchargé (*Download ZIP* à droite) le programme de la semaine essayer d'y accéder en tapant la commande suivante :
 
 ```bash
-C:\Users\YourName>ipython notebook
+C:\Users\YourName> dir C:\chemin\vers\le\dossier\data-kit
+C:\Users\YourName> ipython notebook
 ```
+
+Cela devrait ouvrir votre navigateur vers l'URL `http://localhost:8888/tree`.
+
+Congrats!
