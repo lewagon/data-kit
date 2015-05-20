@@ -47,7 +47,7 @@ Si tout fonctionne bien, vous devriez voir un beau graphique apparaitre.
 
 Lors de cette semaine, nous allons travailler avec iPython notebook.
 
-Une fois que vous avez cloné ou téléchargé (*Download ZIP* à droite) le programme de la semaine essayer d'y accéder en tapant la commande suivante :
+Une fois que vous avez cloné ou [téléchargé](https://github.com/lewagon/data-kit/archive/master.zip) le programme de la semaine essayer d'y accéder en tapant la commande suivante :
 
 ```bash
 C:\Users\YourName> dir C:\chemin\vers\le\dossier\data-kit

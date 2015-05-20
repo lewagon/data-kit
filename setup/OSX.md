@@ -92,7 +92,7 @@ Si tout fonctionne bien, vous devriez voir un beau graphique apparaitre.
 
 Lors de cette semaine, nous allons travailler avec iPython notebook.
 
-Une fois que vous avez cloné ou téléchargé (*Download ZIP* à droite) le programme de la semaine,
+Une fois que vous avez cloné ou [téléchargé](https://github.com/lewagon/data-kit/archive/master.zip) le programme de la semaine,
 déplacez vous dans le dossier (en glissant déposant le dossier sur le terminal
 ou avec la commande `cd`), puis
 essayez d'y acceder en tapant la commande suivante :
