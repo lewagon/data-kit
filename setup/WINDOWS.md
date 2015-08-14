@@ -50,7 +50,7 @@ Lors de cette semaine, nous allons travailler avec iPython notebook.
 Une fois que vous avez cloné ou [téléchargé](https://github.com/lewagon/data-kit/archive/master.zip) le programme de la semaine essayer d'y accéder en tapant la commande suivante :
 
 ```bash
-C:\Users\YourName> dir C:\chemin\vers\le\dossier\data-kit
+C:\Users\YourName> cd C:\chemin\vers\le\dossier\data-kit
 C:\Users\YourName> ipython notebook
 ```
 
