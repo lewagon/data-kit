@@ -4,10 +4,10 @@
 
 #### 1 - Affichez l'évolution mensuelle de la marge et des dépenses
 
-On sélectionne les deux mesures, on applique la méthode `resample` par mois en utilisant une réduction `mean`. On fixe également une limite sur l'axe des ordonnées :
+On sélectionne les deux mesures, on applique la méthode `resample` par mois en utilisant une réduction `sum`. On fixe également une limite sur l'axe des ordonnées :
 
 ```python
-coffee[['Margin','Total Expenses']].resample('M',how='mean').plot(ylim=[0,120])
+coffee[['Margin','Total Expenses']].resample('M',how='sum').plot(ylim=[0,120])
 ```
 
 #### 2 - Affichez l'évolution trimestrielle du profit
