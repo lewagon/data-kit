@@ -48,7 +48,7 @@ array[arr!=2]
 
 ```python 
 
-array[(arr==2)(arr==3)]
+array[(arr==2)|(arr==3)]
 
 ```
 
