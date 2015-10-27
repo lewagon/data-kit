@@ -96,6 +96,17 @@ sub_parlementaire[sub_parlementaire['total'] > 50].sort(True,ascending=False)
 
 Coucou [Philippe MARINI](http://www.francetvinfo.fr/politique/reserve-parlementaire/comment-compiegne-a-ete-financee-par-la-reserve-parlementaire-de-son-senateur-maire_720153.html) ;) 
 
+3/ Nous pouvons utiliser à nouveau la colonne match créée précedemment. Nous groupons cette fois ci sur la colonne `Groupe politique du parlementaire`
+
+```python
+sub_groupe = reserve.groupby(['Groupe politique du parlementaire','match']).size().unstack().fillna(0)
+```
+
+Nous ajoutons une colonne **total**, somme de **True** et de **False** 
+
+```python
+sub_groupe['total'] = sub_groupe[True] + sub_groupe[False]
+```
 
 
 
