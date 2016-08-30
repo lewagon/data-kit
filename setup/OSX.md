@@ -68,7 +68,7 @@ Installez pandas :
 
 ```bash
 $ pip install --upgrade matplotlib
-$ pip install --upgrade pandas
+$ pip install pandas==0.16
 ```
 
 ## Testons notre installation
