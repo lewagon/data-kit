@@ -52,8 +52,8 @@ $ brew install python
 Installez setuptools et pip via :
 
 ```bash
-$ pip install --upgrade setuptools
-$ pip install --upgrade pip
+$ pip2 install --upgrade setuptools
+$ pip2 install --upgrade pip
 ```
 
 Fermez puis ré-ouvrez votre terminal.
@@ -61,14 +61,14 @@ Fermez puis ré-ouvrez votre terminal.
 Installez iPython :
 
 ```bash
-$ pip install "ipython[all]"
+$ pip2 install "ipython[all]"
 ```
 
 Installez pandas :
 
 ```bash
-$ pip install --upgrade matplotlib
-$ pip install pandas==0.16
+$ pip2 install --upgrade matplotlib
+$ pip2 install pandas==0.16
 ```
 
 ## Testons notre installation
@@ -88,6 +88,10 @@ In [2]: plot(arange(10))
 Si tout fonctionne bien, vous devriez voir un beau graphique apparaitre.
 
 ![resultat_final](../images/resultat_final.png )
+
+```bash
+In [3]: quit()
+```
 
 ### Notebook
 
