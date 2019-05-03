@@ -58,10 +58,10 @@ $ pip install --upgrade pip
 
 Fermez puis ré-ouvrez votre terminal.
 
-Installez iPython :
+Installez Jupyter :
 
 ```bash
-$ pip install "ipython[all]"
+$ pip install "jupyter[all]"
 ```
 
 Installez pandas :
