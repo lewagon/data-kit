@@ -106,4 +106,8 @@ $ jupyter notebook
 
 Cela devrait ouvrir votre navigateur vers l'URL `http://localhost:8888/tree`.
 
-Congrats!
+### A noter
+
+Le code présenté dans les notebooks qui suivront a été mis à jour pour Python 3.6+. Il peut légèrement varier par rapport aux vidéos. En cas de doûte, le code du notebook fait foi. 
+
+Bravo, vous avez réussi la première étape d'installation! 
