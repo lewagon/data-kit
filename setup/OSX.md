@@ -68,7 +68,7 @@ Installez pandas :
 
 ```bash
 $ pip install --upgrade matplotlib
-$ pip install pandas==0.16
+$ pip install pandas
 ```
 
 ## Testons notre installation
@@ -78,32 +78,30 @@ $ pip install pandas==0.16
 Nous allons vérifier que iPython et **pandas** sont bien installés par les commandes suivantes dans le terminal :
 
 ```bash
-$ ipython --pylab
+$ python
 
-In [1]: import pandas
+>>> import pandas, numpy
 
-In [2]: plot(arange(10))
+>>> numpy.arange(10)
 ```
 
-Si tout fonctionne bien, vous devriez voir un beau graphique apparaitre.
+Si tout fonctionne bien, vous devriez voir un tableau indexé de 1 à 10: 
 
-![resultat_final](../images/resultat_final.png )
-
-```bash
-In [3]: quit()
 ```
+array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+```
+
+Vous pouvez quitter le programme python avec la commande `exit()`.
 
 ### Notebook
 
-Lors de cette semaine, nous allons travailler avec iPython notebook.
+Lors de cette semaine, nous allons travailler avec Jupyter notebook.
 
-Une fois que vous avez cloné ou [téléchargé](https://github.com/lewagon/data-kit/archive/master.zip) le programme de la semaine,
-déplacez vous dans le dossier (en glissant déposant le dossier sur le terminal
-ou avec la commande `cd`), puis
-essayez d'y acceder en tapant la commande suivante :
+Une fois que vous avez cloné ou [téléchargé](https://github.com/lewagon/data-kit/archive/master.zip) le programme de la semaine, déplacez vous dans le dossier (en glissant déposant le dossier sur le terminal
+ou avec la commande `cd`), puis essayez d'y acceder en tapant la commande suivante :
 
 ```bash
-$ ipython notebook
+$ jupyter notebook
 ```
 
 Cela devrait ouvrir votre navigateur vers l'URL `http://localhost:8888/tree`.
