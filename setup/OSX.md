@@ -52,8 +52,8 @@ $ brew install python
 Installez setuptools et pip via :
 
 ```bash
-$ pip2 install --upgrade setuptools
-$ pip2 install --upgrade pip
+$ pip install --upgrade setuptools
+$ pip install --upgrade pip
 ```
 
 Fermez puis ré-ouvrez votre terminal.
@@ -61,14 +61,14 @@ Fermez puis ré-ouvrez votre terminal.
 Installez iPython :
 
 ```bash
-$ pip2 install "ipython[all]"
+$ pip install "ipython[all]"
 ```
 
 Installez pandas :
 
 ```bash
-$ pip2 install --upgrade matplotlib
-$ pip2 install pandas==0.16
+$ pip install --upgrade matplotlib
+$ pip install pandas==0.16
 ```
 
 ## Testons notre installation
